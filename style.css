@@ -1,0 +1,500 @@
+/* Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* ====================================================== */
+
+.heroWithHeader{
+    height: 100vh;
+    background: url('./Images/firstBackgroundImage.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* ====================================================== */
+
+/* header starts  */
+header{
+    width: 95%;
+    margin: 0 auto;
+    /* background-color: rgb(168, 211, 211); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .navLeftSide{
+    flex: 6;
+    /* background-color: rgb(125, 5, 5); */
+}
+.navLeftSide{
+    padding: 52px;
+}
+.navLeftSide ul{
+    display: flex;
+    text-transform: uppercase;
+    margin-left: -52px;
+}
+.navLeftSide ul li{
+    margin-left: 38px;
+}
+.navLeftSide ul li a{
+    color: white;
+}
+.navLeftSide ul li a{
+   font-size: 17px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 700;
+}
+header .navRightSide{
+    flex: 2;
+    /* background-color: rgb(84, 0, 84); */
+}
+.navRightSide {
+    display: flex;
+    align-items: center;
+}
+.navRightSide ul{
+    display: flex;
+    text-transform: uppercase;
+}
+.navRightSide ul li{
+    margin-left: 22px;
+    margin-right: 12px;
+}
+.navRightSide ul li a{
+    color: #f60;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+.navRightSide img{
+    margin-left: 34px;
+    height: 145px;
+    width: 180px;
+}
+/* header starts  */
+
+/* ====================================================== */
+
+/* heroContainer-section starts  */
+.heroContainer {
+    position: relative;
+}
+.heroInfo{
+    width: 800px;
+    position: absolute;
+    top: 200px;
+    bottom: 0;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+.heroInfo p{
+    font-size: 20px;
+    font-weight:700;
+    text-transform: uppercase;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.heroInfo h1{
+    text-transform: uppercase;
+    font-size: 65px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: white;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.heroInfo .cta-bookBtn{
+    background-color: #f60;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 25px 50px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: all 0.9s;
+}
+.heroInfo .cta-bookBtn:hover{
+    background-color: transparent;
+    border: 1px solid #f60;
+    color: #f60;
+}
+/* heroContainer-section ends  */
+
+/* ====================================================== */
+
+/* brandNew-section starts  */
+.brandsNew-container{
+    width: 60%;
+    /* background-color: bisque; */
+    margin: 0 auto;
+    padding: 88px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.brandsNewHeadings h1{
+    font-size: 70px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.brandsNewHeadings .adventureHeading{
+    color: #f60;
+}
+.brandsNewButtons{
+    display: flex;
+}
+.brandsNewButtons .configuratorBtn{
+    margin-top: 63px;
+    padding: 22px 66px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid black;
+    outline: none;
+    transition: all 0.9s;            
+}
+.brandsNewButtons .configuratorBtn:hover{
+    background-color: black;
+    border: none;
+    color: #f60;
+}
+.brandsNewButtons .exploreBtn{
+    margin-top: 63px;
+    padding: 22px 66px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    margin-left: 42px;  
+    transition: all 0.9s;     
+}
+.brandsNewButtons .exploreBtn:hover{
+    background-color: white;
+    border: 1px solid #f60;
+    color: #f60;
+}
+/* brandNew-section ends  */
+
+/* ====================================================== */
+
+/* newModelImages-section starts  */
+.newModelImagesContainer{
+    width: 95%;
+    margin: 0 auto;
+}
+/* newModelImages-section ends  */
+
+/* ====================================================== */
+
+/* imageCards-section1 starts  */
+.imageCards-section1{
+    margin-top: 77px;
+}
+.imageCardsContainer1{
+    width: 95%;
+    margin: 0 auto;
+    /* background-color: rgb(177, 177, 134); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 19px;
+    grid-row-gap: 63px;
+}
+.imageCardsContainer1 .imageCard1 p,
+.imageCard2 p , .imageCard3 p{
+    font-size: 19px;
+    margin-top: 12px;
+    font-weight: 400;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.imageCardsContainer1 .imageCard1 h4,
+.imageCard2 h4 , .imageCard3 h4{
+    margin-top: 12px;
+    font-size: 28px;
+    font-weight: 700;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* imageCards-section1 ends  */
+
+/* ====================================================== */
+
+/* imageCards-section2 starts  */
+.imageCards-section2{
+    margin-top: 110px;
+}
+.imageCardsContainer2{
+    width: 95%;
+    margin: 0 auto;
+    /* background-color: rgb(202, 155, 93); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 55px;
+}
+.imageCardsContainer2 .imageCard1 .dateAndyear,
+.imageCard2 .dateAndyear ,.imageCard3 .dateAndyear{
+    margin-top: 19px;
+    font-size: 19px;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+}
+.imageCardsContainer2 .imageCard1 h2,
+.imageCard2 h2 ,.imageCard3 h2{
+    font-size: 30px;
+    margin-top: 15px;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    transition: color 0.5s;
+}
+.imageCardsContainer2 .imageCard1 h2:hover,
+.imageCard2 h2:hover ,.imageCard3 h2:hover{
+    color: #f60;
+}
+.imageCardsContainer2 .imageCard1 p,
+.imageCard2 p ,.imageCard3 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    margin-top: 15px;
+    line-height: 36px;
+    font-size: 19px;
+}
+/* imageCards-section2 ends  */
+
+/* ====================================================== */
+
+/* bikeImagesAndContent-section starts  */
+.bikeImagesAndContent-section{
+    margin-top: 100px;
+}
+.bikeImagesAndContent-container{
+    /* background-color: aqua; */
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.bikeImagesAndContent-container .bikeImagesContainer{
+    background-color: red;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.bikeImagesContainer .image1{
+    background: url('https://d3pelj80y5v5k4.cloudfront.net/b7b00d01-7df7-4a0d-ba39-28d025898261?w=400&h=400&q=85&nu=1');
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+.bikeImagesContainer .image2{
+    background: url('https://d3pelj80y5v5k4.cloudfront.net/d0572496-95bf-41b9-921f-12fdcb815166?w=400&h=400&q=85&nu=1');
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+.bikeImagesContainer .image3{
+    background: url('https://d3pelj80y5v5k4.cloudfront.net/78d3755b-8382-4146-8d61-f21a8eef3145?w=400&h=400&q=85&nu=1');
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+.bikeImagesContainer .image4{
+    background: url('https://d3pelj80y5v5k4.cloudfront.net/019f8b19-f0f5-40a1-b0a0-d627d2615725?w=400&h=400&q=85&nu=1');
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+.bikeImagesAndContent-container .contentContainer{
+    background-color: black;
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentContainer h2{
+    font-size: 44px;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contentContainer p{
+    margin-top: 19px;
+    font-size: 18px;
+    color: grey;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contentContainer .follwBtn {
+    background-color: black;
+    color: white;
+    margin-top: 52px;
+    font-size: 18px;
+    padding: 30px 80px;
+    border:  1px solid white;
+    transition: all 0.5s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contentContainer .follwBtn:hover{
+    background-color: transparent;
+    border: 1px solid #f60;
+    color: #f60;
+}
+/* bikeImagesAndContent-section ends  */
+
+/* ====================================================== */
+
+/* smallSignUp-section starts  */
+.smallSignUp-section{
+    margin-top: 49px;
+    border-bottom: 1px solid rgb(148, 138, 138);
+}
+.smallSignUpContainer{
+    width: 95%;
+    height: 25vh;
+    margin: 0 auto;
+    /* background-color: #f60; */
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.smallSignUpContainer h4{
+    font-size: 25px;
+    font-weight: 500;
+    margin-right: 33px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.smallSignUpContainer .signUpBtn{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f60;
+    border:  1px solid #f60;
+    background-color: transparent;
+    padding: 27px 55px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.signUpBtn:hover{
+    background-color: #f60;
+    color: white;
+   
+}
+/* smallSignUp-section ends  */
+
+/* ====================================================== */
+
+/* lastContent-section starts  */
+.lastContentContainer{
+    width: 90%;
+    margin: 0 auto;
+    height: 30vh;
+    /* background-color: #f60; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.lastContentContainer .content{
+    width: 800px;
+    padding: 33px 0;
+    /* background-color: aqua; */
+}
+/* lastContent-section ends  */
+
+/* ====================================================== */
+
+/* footer starts  */
+footer{
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footerContainer{
+    /* background-color: antiquewhite; */
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 66px 0;
+    border-bottom: 2px solid grey;
+}
+.companyContainer h4 ,
+.ktmWorldContainer h4 ,
+.servicesContainer h4 ,
+.leaglContainer h4 ,
+.connectContainer h4{
+    font-size: 25px;
+    color: white;
+    font-family: 700;
+}
+
+.companyContainer ul ,
+.ktmWorldContainer ul ,
+.servicesContainer ul ,
+.leaglContainer ul {
+    margin-top: 32px;
+}
+.companyContainer ul li ,
+.ktmWorldContainer ul li ,
+.servicesContainer ul li ,
+.leaglContainer ul  li{
+    margin-top: 14px;
+}
+.companyContainer ul li a ,
+.ktmWorldContainer ul li a,
+.servicesContainer ul li a,
+.leaglContainer ul  li a{
+    margin-top: 14px;
+    color: white;
+    font-size: 17px;
+}
+.companyContainer ul li a:hover,
+.ktmWorldContainer ul li a:hover,
+.servicesContainer ul li a:hover,
+.leaglContainer ul  li a:hover{
+    color: #f60;
+}
+.footerContainer .connectContainer{
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+}
+.connectContainer ul{
+    display: flex;
+    margin-top: 32px;
+}
+.connectContainer ul li{
+    margin-right: 22px;
+}
+.copyrightContainer {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyrightContainer .copyRight {
+    padding: 33px 0;
+}
+.copyrightContainer .copyRight p{
+    margin-top: 9px;
+    color: rgb(126, 124, 128);
+}
+.copyrightContainer .backToTop h4{
+    color: #f60;
+    font-size: 19px;
+}
+/* footer ends  */
